@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Deudas Cristian</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.7rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { opacity: .7; font-size: .9rem; }
+  li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<h1>Política de privacidad</h1>
+<p class="meta">Deudas Cristian · Última actualización: 9 de noviembre de 2026</p>
+
+<p><strong>Deudas Cristian</strong> es una aplicación personal de control de deudas y gastos, creada y usada por Cristian Torres (Quito, Ecuador). No es un servicio abierto al público: la usa únicamente su desarrollador sobre su propia cuenta de Google.</p>
+
+<h2>1. Qué datos usa la aplicación</h2>
+<ul>
+  <li><strong>Correos de Gmail (solo lectura).</strong> Con el permiso <code>gmail.readonly</code>, la aplicación lee únicamente los correos de los bancos y entidades financieras que el propio usuario configura (por ejemplo, avisos de consumo, pago y vencimiento).</li>
+  <li><strong>Datos extraídos.</strong> De cada correo se guarda solo lo necesario: tipo de aviso, monto, fecha, comercio o referencia y los últimos 4 dígitos de la cuenta o tarjeta. <strong>El cuerpo del correo no se guarda.</strong> No se almacenan cédulas, claves, números completos de cuentas ni datos de terceros.</li>
+  <li><strong>Datos que el usuario ingresa.</strong> Gastos, categorías, presupuestos, pagos registrados y ajustes.</li>
+</ul>
+
+<h2>2. Para qué se usan</h2>
+<p>Exclusivamente para mostrar al usuario el estado de sus deudas, calendario de pagos, gastos, alertas e informes dentro de la aplicación. Los datos no se usan para publicidad, perfilado ni ningún otro fin.</p>
+
+<h2>3. Dónde se guardan</h2>
+<ul>
+  <li>Los datos extraídos y los registros del usuario se guardan en una base de datos privada (Supabase) protegida con autenticación y reglas de acceso por fila: solo el usuario autenticado puede leerlos o modificarlos.</li>
+  <li>El permiso de acceso a Gmail (token) se guarda <strong>cifrado</strong> en el equipo del usuario y no se envía a ningún tercero.</li>
+</ul>
+
+<h2>4. Con quién se comparten</h2>
+<p>Con nadie. No se venden, alquilan ni transfieren datos de usuario a terceros, ni siquiera de forma agregada. Los proveedores de infraestructura (Google para la API de Gmail y Supabase para la base de datos) procesan los datos únicamente para prestar el servicio.</p>
+
+<h2>5. Uso limitado de datos de Google</h2>
+<p>El uso que hace Deudas Cristian de la información recibida de las APIs de Google y su transferencia a cualquier otra aplicación se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos del usuario de los servicios de las APIs de Google</a>, incluidos los requisitos de uso limitado. En concreto:</p>
+<ul>
+  <li>Los datos de Gmail se usan solo para ofrecer las funciones visibles en la aplicación descritas arriba.</li>
+  <li>No se transfieren a terceros, salvo lo necesario para prestar el servicio, cumplir la ley o con el consentimiento del usuario.</li>
+  <li>No se usan para publicidad ni se venden.</li>
+  <li>Ninguna persona lee los correos, salvo el propio usuario, con su consentimiento expreso, por motivos de seguridad o por exigencia legal.</li>
+</ul>
+
+<h2>6. Conservación y eliminación</h2>
+<ul>
+  <li>Los datos se conservan mientras el usuario use la aplicación.</li>
+  <li>El usuario puede <strong>revocar el acceso a Gmail</strong> en cualquier momento desde Ajustes → «Desconectar» en la aplicación, o en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Al desconectar se borra el token guardado.</li>
+  <li>Para eliminar los datos guardados basta con vaciar las tablas de la base de datos o escribir al contacto indicado abajo.</li>
+</ul>
+
+<h2>7. Seguridad</h2>
+<p>Acceso solo con sesión autenticada, reglas de seguridad por fila, token de Gmail cifrado y claves guardadas fuera del código fuente.</p>
+
+<h2>8. Cambios</h2>
+<p>Si esta política cambia, se actualizará esta página con una nueva fecha.</p>
+
+<h2>9. Contacto</h2>
+<p>Cristian Torres · <a href="mailto:cfrtorres0115@gmail.com">cfrtorres0115@gmail.com</a></p>
+</body>
+</html>
